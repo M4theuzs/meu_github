@@ -31,3 +31,12 @@ Erro de push e conflito de merge: demonstra a rejeição do push porque o reposi
 Conflito Detectado: O Git identifica um conflito no arquivo README.md porque tanto a versão remota quanto a local modificaram as mesmas linhas de código.
 
 Merge Automático Falhou: O sistema não consegue resolver o conflito automaticamente, exigindo que o desenvolvedor intervenha manualmente para resolver as diferenças.
+
+![ERRO NO PUSH E CONFLITODE MERGE](img/merge3.png)
+- Status do Merge: O comando git status mostra que:
+
+Os branches local e remoto divergiram (cada um tem commits diferentes), todos os conflitos foram corrigidos manualmente,  merge ainda aguarda ser finalizado com um commit
+
+-Verificação de Atualização: O git pull confirma que não há novas alterações remotas
+
+-Merge Concluído: O indicador (main|MERGING) desaparece, mostrando que o processo de merge foi finalizado com sucesso
