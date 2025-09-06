@@ -1,0 +1,77 @@
+/* ===== Base ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1b2a; /* azul escuro */
+  color: #ededed;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== Util ===== */
+.container { max-width: 1140px; margin: 0 auto; }
+
+/* ===== Header ===== */
+header {
+  margin: 20px 0 30px;
+}
+
+.header-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo esquerda, título centro, capivara direita */
+  text-align: center;
+}
+
+.logo {
+  width: 80px;    /* força tamanho fixo */
+  height: auto;
+}
+
+.mascote {
+  width: 80px;    /* mesmo tamanho do logo */
+  height: auto;
+  border-radius: 12px;
+  opacity: .95;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .5px;
+  flex: 1;               /* ocupa espaço central */
+  text-align: center;    /* centraliza no meio */
+}
+
+/* ===== Caixa de comandos ===== */
+.comandos {
+  display: inline-block;
+  text-align: left;
+  background: #1b263b; /* azul intermediário */
+  padding: 24px 28px;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  min-width: 500px;
+  max-width: 720px;
+  margin: 0 auto; /* centraliza */
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+  border: 1px solid #323232;
+}
+
+.comandos p { margin: 10px 0; }
+
+.comandos code {
+  font-family: monospace;
+  color: #3da5ff; /* azul destaque */
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 28px;
+  opacity: .8;
+  font-size: .95rem;
+}
