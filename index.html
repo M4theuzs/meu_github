@@ -37,3 +37,111 @@
 
 </body>
 </html>
+<<<<<<< Updated upstream
+=======
+<!-- ================= Feature 02 — Resolvendo Conflitos ================= -->
+<section id="conflitos" class="container conflitos-section">
+  <h2>Resolvendo Conflitos</h2>
+
+  <!-- Meme topo -->
+  <figure class="meme-legend">
+    <img src="img/xuxa.jpg" alt="Que Xou da Xuxa é esse?">
+    <figcaption>
+      EU CHEIO DE PROBLEMAS E O PROFESSOR QUERENDO ARRUMAR MAIS PROBLEMA E AINDA PRA MIM RESOLVER
+    </figcaption>
+  </figure>
+
+  <div class="comandos">
+
+    <!-- PASSO 1 -->
+    <h3>Passo 1 — Alteração local</h3>
+    <p>
+      No VS Code, edite o arquivo local nas linhas que depois também serão alteradas no GitHub.
+      (Print mostra apenas a edição local.)
+    </p>
+    <figure class="passo-fig">
+      <img src="img/modifico.png" alt="Editando o arquivo local">
+    </figure>
+
+    <!-- PASSO 2 -->
+    <h3>Passo 2 — git add e primeiro commit</h3>
+    <p>
+      Adicione as mudanças e faça o commit. (Como mostrado no print: <code>git add .</code> e
+      <code>git commit -m "mensagem"</code>.)
+    </p>
+    <figure class="passo-fig">
+      <img src="img/primeiro commi e add .png" alt="git add e git commit">
+    </figure>
+
+    <!-- PASSO 3 -->
+    <h3>Passo 3 — Alteração no GitHub (remoto)</h3>
+    <p>
+      No GitHub, edite o mesmo arquivo e as mesmas linhas (o print mostra a edição direta no GitHub),
+      provocando divergência entre local e remoto.
+    </p>
+    <figure class="passo-fig">
+      <img src="img/pincel .png" alt="Editando arquivo direto no GitHub">
+    </figure>
+
+    <!-- PASSO 4 -->
+    <h3>Passo 4 — Push rejeitado e Pull com conflito</h3>
+    <p>Execute os comandos conforme aparece no print:</p>
+    <div class="cmd-row"><span class="cmd">git push</span> <span class="desc">(rejeitado)</span></div>
+    <div class="cmd-row"><span class="cmd">git pull</span> <span class="desc">(gera o conflito)</span></div>
+    <figure class="passo-fig">
+      <img src="img/git-push-pull.png" alt="Push rejeitado e pull gerando conflito">
+    </figure>
+
+    <!-- PASSO 5 -->
+    <h3>Passo 5 — Resolver o conflito no VS Code</h3>
+    <p>
+      No editor, escolha entre as opções exibidas (Accept Current / Accept Incoming / Accept Combination)
+      até resolver o conflito, exatamente como no print.
+    </p>
+    <figure class="passo-fig">
+      <img src="img/resolvendo .png" alt="Resolvendo o conflito no VS Code">
+    </figure>
+
+    <h3>Passo 6 — Resolver o conflito no VS Code</h3>
+    <p>
+      No editor, escolha entre as opções exibidas (Accept Current / Accept Incoming / Accept Combination)
+      até resolver o conflito, exatamente como no print.
+    </p>
+    <figure class="passo-fig">
+      <img src="img/resolvendo .png" alt="Resolvendo o conflito no VS Code">
+    </figure>
+
+  </div>
+
+  <!-- Meme final -->
+  <figure class="meme-legend" style="max-width:420px">
+    <img src="img/git-push-corre.jpg" alt="git push and run">
+    <figcaption>
+      Digite o GIT PUSH feche os olhos ou corra
+  </figure>
+</section>
+
+<!-- ================= Roteiro 2 — Branches (básico) — feature/03 ================= -->
+<section id="branches" class="container">
+  <h2>Branches (básico)</h2>
+
+  <div class="comandos">
+    <h3>1) Criar e trabalhar na feature</h3>
+    <p><code>git checkout -b feature/03-branches-basico</code> — cria a branch da feature três</p>
+    <p><code>git add .</code> — adiciona mudanças</p>
+    <p><code>git commit -m "feat(branch):adiciona conteúdo de branches"</code> — commit semântico</p>
+    <p><code>git push -u origin feature/03-branches-basico</code> — sobe a branch</p>
+
+    <h3>2) Manter a feature atualizada com a main</h3>
+    <p><code>git fetch origin</code> — busca do remoto</p>
+    <p><code>git rebase origin/main</code> — reaplica seus commits sobre a main atual</p>
+    <p>Se der conflito: resolva no editor → <code>git add .</code> → <code>git rebase --continue</code></p>
+
+    <h3>3) (Opcional) Guardar mudanças sem commit</h3>
+    <p><code>git stash</code> • <code>git stash list</code> • <code>git stash pop</code></p>
+
+    <h3>4) Nomenclatura (kebab-case)</h3>
+    <p>Ex.: <code>feature/03-branches-basico</code>, <code>fix/03-ajusta-descricao</code>, <code>docs/03-atualiza-guia</code></p>
+  </div>
+</section>
+>>>>>>> Stashed changes
