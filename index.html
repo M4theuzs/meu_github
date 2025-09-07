@@ -35,6 +35,7 @@
 
 </body>
 </html>
+
 <!-- ================= Feature 02 — Resolvendo Conflitos ================= -->
 <section id="conflitos" class="container conflitos-section">
   <h2>Resolvendo Conflitos</h2>
@@ -115,4 +116,29 @@
     <figcaption>
       Digite o GIT PUSH feche os olhos ou corra
   </figure>
+</section>
+
+
+<!-- ================= Roteiro 2 — Branches (básico) — feature/03 ================= -->
+<section id="branches" class="container">
+  <h2>Branches (básico)</h2>
+
+  <div class="comandos">
+    <h3>1) Criar e trabalhar na feature</h3>
+    <p><code>git checkout -b feature/03-branches-basico</code> — cria a branch da feature três</p>
+    <p><code>git add .</code> — adiciona mudanças</p>
+    <p><code>git commit -m "feat(branch):adiciona conteúdo de branches"</code> — commit semântico</p>
+    <p><code>git push -u origin feature/03-branches-basico</code> — sobe a branch</p>
+
+    <h3>2) Manter a feature atualizada com a main</h3>
+    <p><code>git fetch origin</code> — busca do remoto</p>
+    <p><code>git rebase origin/main</code> — reaplica seus commits sobre a main atual</p>
+    <p>Se der conflito: resolva no editor → <code>git add .</code> → <code>git rebase --continue</code></p>
+
+    <h3>3) (Opcional) Guardar mudanças sem commit</h3>
+    <p><code>git stash</code> • <code>git stash list</code> • <code>git stash pop</code></p>
+
+    <h3>4) Nomenclatura (kebab-case)</h3>
+    <p>Ex.: <code>feature/03-branches-basico</code>, <code>fix/03-ajusta-descricao</code>, <code>docs/03-atualiza-guia</code></p>
+  </div>
 </section>
