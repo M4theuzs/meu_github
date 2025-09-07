@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projeto Integrador — Git/GitHub</title>
-  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/global.css" />
 </head>
+
 <body>
 
   <header>
@@ -31,9 +33,86 @@
     </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 — Atividade Git/GitHub</p>
-  </footer>
-
 </body>
 </html>
+<!-- ================= Feature 02 — Resolvendo Conflitos ================= -->
+<section id="conflitos" class="container conflitos-section">
+  <h2>Resolvendo Conflitos</h2>
+
+  <!-- Meme topo -->
+  <figure class="meme-legend">
+    <img src="img/xuxa.jpg" alt="Que Xou da Xuxa é esse?">
+    <figcaption>
+      EU CHEIO DE PROBLEMAS E O PROFESSOR QUERENDO ARRUMAR MAIS PROBLEMA E AINDA PRA MIM RESOLVER
+    </figcaption>
+  </figure>
+
+  <div class="comandos">
+
+    <!-- PASSO 1 -->
+    <h3>Passo 1 — Alteração local</h3>
+    <p>
+      No VS Code, edite o arquivo local nas linhas que depois também serão alteradas no GitHub.
+      (Print mostra apenas a edição local.)
+    </p>
+    <figure class="passo-fig">
+      <img src="img/modifico.png" alt="Editando o arquivo local">
+    </figure>
+
+    <!-- PASSO 2 -->
+    <h3>Passo 2 — git add e primeiro commit</h3>
+    <p>
+      Adicione as mudanças e faça o commit. (Como mostrado no print: <code>git add .</code> e
+      <code>git commit -m "mensagem"</code>.)
+    </p>
+    <figure class="passo-fig">
+      <img src="img/primeiro commi e add .png" alt="git add e git commit">
+    </figure>
+
+    <!-- PASSO 3 -->
+    <h3>Passo 3 — Alteração no GitHub (remoto)</h3>
+    <p>
+      No GitHub, edite o mesmo arquivo e as mesmas linhas (o print mostra a edição direta no GitHub),
+      provocando divergência entre local e remoto.
+    </p>
+    <figure class="passo-fig">
+      <img src="img/pincel .png" alt="Editando arquivo direto no GitHub">
+    </figure>
+
+    <!-- PASSO 4 -->
+    <h3>Passo 4 — Push rejeitado e Pull com conflito</h3>
+    <p>Execute os comandos conforme aparece no print:</p>
+    <div class="cmd-row"><span class="cmd">git push</span> <span class="desc">(rejeitado)</span></div>
+    <div class="cmd-row"><span class="cmd">git pull</span> <span class="desc">(gera o conflito)</span></div>
+    <figure class="passo-fig">
+      <img src="img/git-push-pull.png" alt="Push rejeitado e pull gerando conflito">
+    </figure>
+
+    <!-- PASSO 5 -->
+    <h3>Passo 5 — Resolver o conflito no VS Code</h3>
+    <p>
+      No editor, escolha entre as opções exibidas (Accept Current / Accept Incoming / Accept Combination)
+      até resolver o conflito, exatamente como no print.
+    </p>
+    <figure class="passo-fig">
+      <img src="img/resolvendo .png" alt="Resolvendo o conflito no VS Code">
+    </figure>
+
+    <h3>Passo 6 — Resolver o conflito no VS Code</h3>
+    <p>
+      No editor, escolha entre as opções exibidas (Accept Current / Accept Incoming / Accept Combination)
+      até resolver o conflito, exatamente como no print.
+    </p>
+    <figure class="passo-fig">
+      <img src="img/resolvendo .png" alt="Resolvendo o conflito no VS Code">
+    </figure>
+
+  </div>
+
+  <!-- Meme final -->
+  <figure class="meme-legend" style="max-width:420px">
+    <img src="img/git-push-corre.jpg" alt="git push and run">
+    <figcaption>
+      Digite o GIT PUSH feche os olhos ou corra
+  </figure>
+</section>
