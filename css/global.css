@@ -1,0 +1,176 @@
+/* ===== Base ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1b2a; /* azul escuro */
+  color: #ededed;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== Util ===== */
+.container { max-width: 1140px; margin: 0 auto; }
+
+/* ===== Header ===== */
+header {
+  margin: 20px 0 30px;
+}
+
+.header-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo esquerda, título centro, capivara direita */
+  text-align: center;
+}
+
+.logo {
+  width: 80px;    /* força tamanho fixo */
+  height: auto;
+}
+
+.mascote {
+  width: 80px;    /* mesmo tamanho do logo */
+  height: auto;
+  border-radius: 12px;
+  opacity: .95;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .5px;
+  flex: 1;               /* ocupa espaço central */
+  text-align: center;    /* centraliza no meio */
+}
+
+/* ===== Caixa de comandos ===== */
+.comandos {
+  display: inline-block;
+  text-align: left;
+  background: #1b263b; /* azul intermediário */
+  padding: 24px 28px;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  min-width: 500px;
+  max-width: 720px;
+  margin: 0 auto; /* centraliza */
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+  border: 1px solid #323232;
+}
+
+.comandos p { margin: 10px 0; }
+
+.comandos code {
+  font-family: monospace;
+  color: #3da5ff; /* azul destaque */
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 28px;
+  opacity: .8;
+  font-size: .95rem;
+}
+/* Espaçamento geral da seção */
+.conflitos-section { 
+  margin: 2rem auto; 
+  text-align: center; 
+}
+
+/* Meme com legenda */
+.meme-legend { 
+  max-width: 560px; 
+  margin: .5rem auto 1.25rem; 
+}
+.meme-legend img { 
+  width: 100%; 
+  border-radius: 8px; 
+  display: block; 
+}
+.meme-legend figcaption { 
+  font-size: 1rem; 
+  color: #cfd6e2; 
+  margin-top: .4rem; 
+}
+
+/* Quadros: dão respiro entre si */
+.comandos { 
+  margin: 0 auto 2rem; 
+}
+.quadro-conflitos { margin-top: 1rem; }
+.quadro-resumo { margin-top: 1rem; }
+
+/* Passos */
+.passos { 
+  margin: .25rem 0 0 1.2rem; 
+  text-align: left; 
+  list-style: decimal; 
+  list-style-position: inside;
+}
+.passos li { 
+  margin: 2rem 0;   /* mais espaço entre itens numerados */
+}
+.passos code {
+  background: #0d1b2a; 
+  border: 1px solid #2b344a; 
+  border-radius: 4px;
+  padding: .15rem .4rem; 
+  display: inline-block; 
+  margin: .25rem .25rem 0 0;
+}
+
+/* Títulos dos passos (quando não usa <li>) */
+.comandos h3 {
+  margin-top: 2.5rem;   /* espaço maior antes de cada passo */
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Imagens por passo */
+.passo-fig { 
+  margin: 1rem auto 2.5rem auto; /* espaço maior embaixo das imagens */
+  text-align: center; 
+}
+.passo-fig img {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 6px;
+  border: 1px solid #2b344a;
+  display: block;
+  margin: 0 auto;
+}
+.passo-fig figcaption {
+  font-size: 1rem;
+  color: #cfd6e2;
+  margin-top: .55rem;
+  opacity: .95;
+}
+
+/* Resumo em lista (se usar novamente) */
+.resumo-list { 
+  list-style: none; 
+  padding: 0; 
+  margin: .5rem 0 0 0; 
+  text-align: left; 
+}
+.resumo-list li { 
+  margin: .35rem 0; 
+}
+.resumo-list code {
+  display: block;              /* quebra em linhas */
+  white-space: normal;         /* evita barra de rolagem horizontal */
+  background: #0d1b2a; 
+  border: 1px solid #2b344a; 
+  border-radius: 6px;
+  padding: .45rem .6rem;
+}
+
+/* Responsivo */
+@media (max-width: 860px) {
+  .passo-fig img { max-width: 100%; }
+}
