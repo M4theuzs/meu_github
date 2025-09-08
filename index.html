@@ -26,3 +26,31 @@
       </ul>
     </div>
   </section>
+
+  <section class="comandos">
+  <h2>Branches e Fluxo de Trabalho</h2>
+  <div class="caixa-comandos">
+    <ul>
+      <li><code>git checkout -b nome-da-branch</code> — cria nova branch</li>
+      <li><code>git revert &lt;hash&gt;</code> — reverte commit sem apagar histórico</li>
+      <li><code>git reset --hard &lt;hash&gt;</code> — volta commit apagando histórico local</li>
+      <li><code>git stash</code> — guarda alterações temporariamente</li>
+      <li><code>git stash pop</code> — recupera alterações guardadas</li>
+      <li><code>git rebase origin/main</code> — aplica atualizações da main</li>
+      <li><code>git push --force-with-lease</code> — força push com segurança</li>
+    </ul>
+  </div>
+</section>
+
+<section class="comandos">
+  <h2>Boas práticas e convenções</h2>
+  <div class="caixa-comandos">
+    <ul>
+      <li>Use mensagens de commit padronizadas (<code>feat: descrição</code>, <code>fix:</code>, etc)</li>
+      <li>Prefira <strong>rebase</strong> ao invés de merge para manter histórico limpo</li>
+      <li>Siga convenção de nomes: <code>feature/01-nome</code>, <code>fix/02-bug</code></li>
+      <li>Evite <code>reset --hard</code> em branches compartilhadas</li>
+      <li>Use <code>--force-with-lease</code> em vez de <code>--force</code></li>
+    </ul>
+  </div>
+</section>
