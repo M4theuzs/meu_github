@@ -1,4 +1,3 @@
-<!-- HTML FINAL COM TODAS AS FEATURES -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -28,33 +27,38 @@
   </section>
 
   <section class="comandos">
-  <h2>Branches e Fluxo de Trabalho</h2>
-  <div class="caixa-comandos">
-    <ul>
-      <li><code>git checkout -b nome-da-branch</code> — cria nova branch</li>
-      <li><code>git revert &lt;hash&gt;</code> — reverte commit sem apagar histórico</li>
-      <li><code>git reset --hard &lt;hash&gt;</code> — volta commit apagando histórico local</li>
-      <li><code>git stash</code> — guarda alterações temporariamente</li>
-      <li><code>git stash pop</code> — recupera alterações guardadas</li>
-      <li><code>git rebase origin/main</code> — aplica atualizações da main</li>
-      <li><code>git push --force-with-lease</code> — força push com segurança</li>
-    </ul>
-  </div>
-</section>
+    <h2>Branches e Fluxo de Trabalho</h2>
+    <div class="caixa-comandos">
+      <ul>
+        <li><code>git checkout -b nome-da-branch</code> — cria nova branch</li>
+        <li><code>git revert &lt;hash&gt;</code> — reverte commit sem apagar histórico</li>
+        <li><code>git reset --hard &lt;hash&gt;</code> — volta commit apagando histórico local</li>
+        <li><code>git stash</code> — guarda alterações temporariamente</li>
+        <li><code>git stash pop</code> — recupera alterações guardadas</li>
+        <li><code>git rebase origin/main</code> — aplica atualizações da main</li>
+        <li><code>git push --force-with-lease</code> — força push com segurança</li>
+      </ul>
+    </div>
+  </section>
 
-<section class="comandos">
-  <h2>Boas práticas e convenções</h2>
-  <div class="caixa-comandos">
-    <ul>
-      <li>Use mensagens de commit padronizadas (<code>feat: descrição</code>, <code>fix:</code>, etc)</li>
-      <li>Prefira <strong>rebase</strong> ao invés de merge para manter histórico limpo</li>
-      <li>Siga convenção de nomes: <code>feature/01-nome</code>, <code>fix/02-bug</code></li>
-      <li>Evite <code>reset --hard</code> em branches compartilhadas</li>
-      <li>Use <code>--force-with-lease</code> em vez de <code>--force</code></li>
-    </ul>
-  </div>
-</section>
- <main>
+  <section class="comandos">
+    <h2>Boas práticas e convenções</h2>
+    <div class="caixa-comandos">
+      <ul>
+        <li>Use mensagens de commit padronizadas (<code>feat: descricao</code>, <code>fix:</code>, etc)</li>
+        <li>Prefira <strong>rebase</strong> ao invés de merge para manter histórico limpo</li>
+        <li>Siga convenção de nomes: <code>feature/01-nome</code>, <code>fix/02-bug</code></li>
+        <li>Evite <code>reset --hard</code> em branches compartilhadas</li>
+        <li>Use <code>--force-with-lease</code> em vez de <code>--force</code></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Feature 03 - Resolução de Conflito -->
+  <main>
+    <h1>Resolução de Conflito</h1>
+    <img src="img/xuxa.jpg" alt="Meme da Xuxa Show" style="max-width: 400px; display: block; margin: 10px auto;">
+
     <section>
       <h2>1. Alteração local feita no código</h2>
       <p>Fizemos mudanças locais no código, iniciando o processo que pode gerar conflito.</p>
@@ -67,7 +71,7 @@
       <img src="img/commit-conflito - Copia.png" alt="Commit local gerrando o conflitinho">
     </section>
 
-     <section>
+    <section>
       <h2>3. Usando o lápis no GitHub</h2>
       <p>Editamos o arquivo online usando o ícone de lápis do GitHub.</p>
       <img src="img/pincel .png" alt="Editar arquivo no GitHub com lápis">
@@ -90,6 +94,8 @@
       <p>No VS Code, escolhemos entre a versão local, remota ou mesclar as duas para resolver o conflito.</p>
       <img src="img/resolvendo .png" alt="Tela de resolução de conflitos VS Code">
     </section>
+
+    <img src="img/git-push-corre.jpg" alt="Meme do Git Pull e Corre" style="max-width: 500px; display: block; margin: 20px auto;">
   </main>
 
   <footer>
