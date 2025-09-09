@@ -4,6 +4,23 @@
 alterando linha4 local
 alterando linha5 local
 
+# Comandos git essenciais
+
+   | Comando                               | Descrição                                                   |
+   | ------------------------------------- | ----------------------------------------------------------- |
+   | git init                            | Inicializa um repositório vazio                             |
+   | git clone <url>                     | Clona repositório remoto do git hub                         |
+   | git remote                          | Lista a url do servidor onde o projeto está salvo           |
+   | git status                          | Mostra estado da árvore de trabalho                         |
+   | git branch                          | Lista ou cria branches                                      |
+   | git checkout -b <nome-da-branch>    | Cria uma nova branch e já muda (faz checkout) pra ela       |
+   | git add <arq>                       | Adiciona mudanças ao stage                                  |
+   | git commit -m "msg"                 | Registra snapshot                                           |
+   | git push                            | Envia commits ao GitHub                                     |
+   | git pull                            | Sincroniza e integra mudanças                               |
+   | git merge                           | Mescla branches                                             |
+   | git log --oneline --graph           | Histórico compacto                                          |
+
 ##Merge de Branch & Pull Request
 ![Commit e Push Inicial](img/merge1.png)
 A primeira imagem documenta a fase inicial de um fluxo de trabalho com Git, mostrando um processo de desenvolvimento normal antes de qualquer conflito ocorrer. Esta sequência de comandos demonstra o ciclo básico do versionamento: fazer alterações locais, registrar essas alterações com commits e enviá-las para o repositório remoto.
